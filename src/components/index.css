@@ -1,0 +1,10 @@
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.cart-list {
+  /* flex:1 1 auto; */
+  flex-grow: 1;
+  align-self: auto;
+}
