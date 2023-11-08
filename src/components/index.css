@@ -8,3 +8,33 @@
   flex-grow: 1;
   align-self: auto;
 }
+
+.hero-background {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background: rgb(68, 205, 70);
+  background: linear-gradient(90deg, rgba(68, 205, 70, 0.577468487394958) 0%, rgba(165, 186, 17, 0.835171568627451) 35%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text h1,
+p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: stretch;
+  font-size: 36px; /* Ukuran font judul */
+  margin: 0;
+}
+
+.hero-text button {
+  display: block;
+  margin: 0 auto; /* Membuat tombol berada di tengah horizontal */
+}
