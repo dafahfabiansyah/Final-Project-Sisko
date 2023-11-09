@@ -1,30 +1,48 @@
 import React from 'react';
 import { Container, Typography, Link, Grid, Box } from '@mui/material';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import '../index.css';
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 2 }}>
-      <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
-            <Typography variant="body1">Tentang Kami</Typography>
-            <Typography variant="body2">Deskripsi singkat tentang situs Anda atau perusahaan Anda.</Typography>
+    <div>
+      <Box position="static" sx={{ bgcolor: '#272727', color: 'white', py: 2 }}>
+        <div className="icon">
+          <FacebookOutlinedIcon />
+          <PinterestIcon />
+          <InstagramIcon />
+          <TwitterIcon />
+        </div>
+        <Container>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={3}>
+              <Typography variant="body1">Emporio</Typography>
+              <Typography variant="body2">info@emporio.com</Typography>
+              <Typography variant="body2">+62812345678</Typography>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Typography variant="body1">Shop</Typography>
+              <Typography variant="body2">Men</Typography>
+              <Typography variant="body2">Women</Typography>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Typography variant="body1">Our Store</Typography>
+              <Typography variant="body2">About Us</Typography>
+              <Typography variant="body2">FAQ</Typography>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Typography variant="body1">Terms & Conditions</Typography>
+              <Typography variant="body2">Privacy Policies</Typography>
+              <Typography variant="body2">Payment Methods</Typography>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant="body1">Tautan Berguna</Typography>
-            <Link href="/tentang-kami" color="inherit">
-              Tentang Kami
-            </Link>
-            <Link href="/layanan" color="inherit">
-              Layanan
-            </Link>
-            <Link href="/kontak" color="inherit">
-              Kontak
-            </Link>
-          </Grid>
-        </Grid>
-      </Container>
-    </Box>
+        </Container>
+      </Box>
+      <h5>© Emperio Clothing & Apparels | All Rights Reserved</h5>
+    </div>
   );
 };
 
